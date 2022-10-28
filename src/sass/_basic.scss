@@ -1,0 +1,162 @@
+//**** Basic styles
+// Make viewport responsive
+@at-root {
+	@-ms-viewport {
+		width: device-width;
+	}
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+[tabindex='-1']:focus {
+	outline: none !important;
+}
+
+// iOS 'clickable elements' fix for role='button'
+[role='button'] {
+	cursor: pointer;
+}
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+a,
+button,
+[role='button'],
+input,
+label,
+select,
+textarea {
+	touch-action: manipulation;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+input {
+	overflow: visible;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+
+select {
+	word-wrap: normal;
+	text-transform: none;
+}
+
+fieldset {
+	min-width: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	outline-offset: -2px;
+	-webkit-appearance: none;
+}
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	font: inherit;
+	-webkit-appearance: button;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+	margin-bottom: .5rem;
+	font-size: 1.5rem;
+	line-height: inherit;
+	color: inherit;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+svg {
+	visibility: visible;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	appearance: none;
+}
+
+a {
+	cursor: pointer;
+}
+strong, b {
+	font-weight: bold;
+}
+
+// Avoid border in links on focus
+a:active,
+a:focus {
+	outline: none;
+}
+::-moz-focus-outer,
+::-moz-focus-inner {
+	border: 0;
+}
+input:invalid {
+	box-shadow: none;
+}
+
+// Main styles
+html, body {
+	height: 100%;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	font-family: var(--figtree);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	color: var(--white);
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: none;
+}

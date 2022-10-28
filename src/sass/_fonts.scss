@@ -1,0 +1,11 @@
+// Fonts
+$font-path: '/fonts';
+
+@font-face {
+  font-family: 'WT Monarch Nova';
+  src: url($font-path + '/WTMonarchNova-Roman.woff2') format('woff2'),
+      url($font-path + '/WTMonarchNova-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

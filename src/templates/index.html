@@ -1,0 +1,37 @@
+---
+title: Oceanverse
+
+keywords:
+description:
+
+socialTitle: Oceanverse
+socialDescription: Oceanverse
+socialImg:
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  <div class="bubbles"></div>
+  <div class="bg-light">
+    {{ imgSmall('light', 'png', 'Bubbles', 'nolazy') }}
+  </div>
+  <div class="scroll-down">
+    <div class="scroll-down__inner">
+      <span class="scroll-down__text text-caption">scroll down</span>
+      <div class="scroll-down__box">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  {% include "sections/_hero.html" %}
+  {% include "sections/_save.html" %}
+  {% include "sections/_help.html" %}
+  {% include "sections/_steps.html" %}
+  {% include "sections/_roadmap.html" %}
+  {% include "sections/_get.html" %}
+  {% include "sections/_faq.html" %}
+  {% include "sections/_stay.html" %}
+{% endblock %}
